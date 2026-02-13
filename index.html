@@ -8,33 +8,35 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/Senai.jpg" type="image/x-icon">
 
-    <!-- Importação das Fontes (Google Fonts) -->
+    <!-- Importação das Fontes (Google fonts) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <!-- Link para folha de estilos -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+    <!-- Header (Cabeçalho) -->
     <header class="header">
-        <nav class="container nav-header">  
-            <img src="assets/logos_senai_branco.png" alt="Logo Senai" class="logo">
+        <nav class="container nav-header">
+            <!-- Logo -->
+            <img src="assets/logos_senai_branco.png" alt="Logo do Senai" class="logo">
 
             <!-- Menu hamburguer -->
-             <button class="btn-menu">&#9776</button>
+            <button class="btn-menu">&#9776</button>
 
+            <!-- Menu (Com links) -->
             <ul class="menu">
-                <li><a href=#>Início</a></li>
-                <li><a href="#>sobre">Sobre</a></li>
-                <li><a href="#>endereço">Endereço</a></li>
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#endereco">Endereço</a></li>
                 <li><a href="#" class="botao">Contate-nos</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main (área de destaque da página)-->
+    <!-- Main (área de destaque da página) -->
      <main>
         <section class="banner">
             <div class="container conteudo-banner">
@@ -45,22 +47,77 @@
             </div>
         </section>
 
-    </section class="sobre" id="sobre">
-        <div class="container">
-            <h2 class="titulo-secao">Sobre os Projetos</h2>
+        <section class="sobre" id="sobre">
+            <div class="container">
+                <h2 class="titulo-secao">Sobre os Projetos</h2>
 
-            <div class="conteudo-sobre">
-                <img src="assets/imagem-seção-sobre.jpg" alt="Alunos em aula">
-                <div class 
-
-
-            </div>
-        </div>
+                <div class="conteudo-sobre">
+                    <img src="assets/imagem-seção-sobre.jpg" alt="Alunos em aula" class="imagem-sobre">
+                    <div class="texto-sobre">
+                        <span class="destaque">Participantes</span>
+                        <h3>Mais de 80 alunos organizados em 16 grupos</h3>
+                        <p> O SENAI oferece cursos técnicos que combinam teoria e prática, preparando os alunos para os desafios do mercado de trabalho. Com uma metodologia inovadora e professores altamente qualificados.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <!-- Seção (Cards)-->
+         <section class="info">
+            <div class="container">
+                <ul class="cards-info">
+                    <li class="card">
+                        <h3>Local</h3>
+                        <p>São Paulo</p>
+                    </li>
+
+                    <li class="card">
+                        <h3>Duração</h3>
+                        <p>90 dias</p>
+                    </li>
+
+                    <li class="card">
+                        <h3>Desafios</h3>
+                        <p>+30 Desafios</p>
+                    </li> 
+                </ul>
+            </div>
+
+
+         </section>
+
+         <!-- Seção (Endereço)-->
+          <section class="endereco" id="endereco">
+            <div class="container">
+                <h2 class="titulo-secao">Endereço</h2>
+
+                <div class="conteudo-endereco">
+                    <address class="texto-endereco">
+                        Av. Santos Dumont, 300 <br>
+                        Ipiranguinha, Santo André - SP <br>
+                        CEP: 09015-320
+                 </address>
+
+                 <a href="https://maps.app.goo.gl/oEnMLQu8WrTodYUv6" target="blank">
+                    <img src="assets/mapa.png" alt="Mapa do Senai" class="mapa">
+
+                 </a>
+            </div>
+          </section>
      </main>
 
+     <!-- Footer (Rodapé) -->
+      <footer class="footer">
+        <p>Copyright © 2026 - SENAI/SESI Santo André 1.18</p>
+      </footer>
+
+
+
+
+
     <!-- Chamada do Java Script -->
-     <script src="efeito.js"></script>
+    <script src="efeito.js"></script>
+    
 </body>
 </html>
